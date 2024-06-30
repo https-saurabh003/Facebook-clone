@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+}
+.heading{
+    display: flex;
+    justify-content: space-around;
+}
+.heading .box{
+    padding: 1rem;
+  
+}
+.heading .box i{
+    color: rgba(128, 128, 128, 0.884);
+}
+
+.logo-1{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1rem;   
+}
+.logo-1 h2{
+font-size: 2em;
+color: rgba(9, 9, 218, 0.932);
+}
+    
+.logo-1 .activity-icon{
+    margin-left: 5rem;
+}
+.logo-1 .activity-icon i{
+    padding-left:3rem ;
+    font-size: 1.5em;
+    color: black;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-left:2rem ;
+}
+.social-media i{
+    padding-left:3rem ;
+    font-size: 1.5em;
+
+}
+.post-activity{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.post-activity img.png{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    margin-right: 2rem ;
+}
+.post-activity input{
+    margin-right: 2rem ;
+    border-radius: 1rem;
+    border: 0.1em solid rgba(128, 128, 128, 0.733);
+    outline: none;
+    height: 3rem;
+}
+.post-activity i{
+    margin-right: 2rem ;
+    font-size: 2.5rem;
+}
+
+
+section{
+display: flex;
+margin-bottom: 1rem;
+margin-top: 0.5rem;
+}
+section .user{
+    width: 15rem;
+    height: 20rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+.owner{
+    border: 0.3rem solid gray;
+    border-radius: 10%;
+}
+.owner img{
+    width: 100%;
+    height: 60%;
+    border-radius: 50%;
+}
+.owner i{
+    font-size: 3rem;
+    border: 0.2rem solid white;
+    border-radius: 50%; 
+    color:  rgba(9, 9, 218, 0.932);
+    margin-bottom: 0.5rem;
+    /* background-color:  rgba(9, 9, 218, 0.932); */
+}
+.user i{
+    font-size: 3rem;
+    border: 0.2rem solid white;
+    border-radius: 50%; 
+    color:  rgba(9, 9, 218, 0.932);
+    margin-bottom: 0.5rem;
+    /* background-color:  rgba(9, 9, 218, 0.932); */
+}
+.user p{
+    font-size: 1.5em;
+}
+.user p span{
+    display: block;
+}
+.story .box-1{
+    position: relative;
+    display: flex;
+}
+.story .box-1 .story-img {
+    position: absolute;
+    height:5rem ;
+    width: 5rem;
+    left: 5%;
+    top: 5%;
+}
+.story .box-1 .story-img img{
+    border: 2px solid white;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.story .box-1 .user-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 8%;
+}
+.post{
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* width: 80%; */
+}
+.user-name{
+    display: flex;
+    justify-content: space-between;
+}
+.story-img{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.user-name .story-img h3{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.user-name img{
+    height:4rem ;
+    width: 4rem;
+    border-radius: 50%;
+    border: 0.2rem solid yellowgreen;
+}
+.post-icon{
+    font-size: 3rem;
+    padding: 1rem;
+}
+.post-icon i{
+    margin-left: 3rem;
+}
+
+.user-post img{
+    height: 100%;
+    width: 100%;
+}
+.user-post p{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1190px) {
+    :root{
+        font-size: 54%;
+    }
+    .container{
+        width: 100%;
+    }
+    .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .logo-1{
+        width: 100%;
+        position: sticky;
+        top: 0;
+        background: rgba(128, 128, 128, 0.185);
+        display: flex;
+        border-radius: 1rem;
+        justify-content: space-between;
+    }
+    .logo-1 h2{
+        font-size: 3.5rem;
+    }
+    .logo-1 .activity-icon{
+        font-size:1.5rem;
+        padding-left: 2rem;
+    }
+    .social-media{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .social-media i{
+        font-size: 3rem;
+        padding-left: 0;
+    }
+    .post-activity {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .post-activity .input{
+        width: 70%;
+        height: 4rem;
+    } 
+    .post-activity .png{
+        border: 0.3rem solid rgba(0, 128, 0, 0.795);
+    }
+    .story{
+        display: flex;
+    }
+  }
+  @media screen and (max-width:380px){
+    .container{
+        width: 100%;
+    }
+    .logo-1{
+        width: 100%;
+    }
+    .logo-1 .activity-icon{
+        display: flex;
+    }
+    .logo-1 .activity-icon i{
+        padding-left: 1rem;
+    }
+  }
